@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://img/meat.tres" type="Texture" id=1]
+[ext_resource path="res://img/materialMeat.tres" type="Material" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 30, 30, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="CubeMesh" id=3]
+
+[node name="meat" type="Spatial"]
+
+[node name="cubo" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.4, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="fundo" type="MeshInstance" parent="cubo"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="frente" type="MeshInstance" parent="cubo"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 30 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="direita" type="MeshInstance" parent="cubo"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 15, 15 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="esquerda" type="MeshInstance" parent="cubo"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -15, 15, 15 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="chão" type="MeshInstance" parent="cubo"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, -9.53674e-07, 0, 15 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="teto" type="MeshInstance" parent="cubo"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 9.53674e-07, 30, 15 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.974536, 6.52896, 13.9772 )
+texture = ExtResource( 1 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -0.380395, -0.924769, -0.0100897, -0.532054, 0.209906, 0.820279, -0.756451, 0.317399, -0.571874, 0, 15, 0 )
+visible = false
+shadow_enabled = true
+
+[node name="mesa" type="Spatial" parent="."]
+transform = Transform( 5.70541, 0, 0, 0, 0.153541, 0, 0, 0, 2.64241, 0.339618, 3.33072, 14.2166 )
+
+[node name="tabletop" type="MeshInstance" parent="mesa"]
+mesh = SubResource( 2 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 2 )
+
+[node name="pé" type="MeshInstance" parent="mesa"]
+transform = Transform( -4.77928e-08, 0.0294242, 0, -10.2278, -1.20314e-08, 0, 0, 0, 0.0549465, -0.905395, -10.004, 0.756884 )
+mesh = SubResource( 3 )
+material/0 = ExtResource( 2 )
+
+[node name="pé2" type="MeshInstance" parent="mesa"]
+transform = Transform( -4.77928e-08, 0.0294242, 0, -10.2278, -1.20314e-08, 0, 0, 0, 0.0549465, -0.905395, -10.004, -0.756884 )
+mesh = SubResource( 3 )
+material/0 = ExtResource( 2 )
+
+[node name="pé3" type="MeshInstance" parent="mesa"]
+transform = Transform( -4.77928e-08, 0.0294242, 0, -10.2278, -1.20314e-08, 0, 0, 0, 0.0549465, 0.919524, -10.004, 0.756884 )
+mesh = SubResource( 3 )
+material/0 = ExtResource( 2 )
+
+[node name="pé4" type="MeshInstance" parent="mesa"]
+transform = Transform( -4.77928e-08, 0.0294242, 0, -10.2278, -1.20314e-08, 0, 0, 0, 0.0549465, 0.919524, -10.004, -0.756884 )
+mesh = SubResource( 3 )
+material/0 = ExtResource( 2 )

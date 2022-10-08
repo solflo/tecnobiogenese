@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/lithograph1__self_portrait_of_an_angel3-0050.png-be0780bc5552b32d8a7c33ce90fb6bec.s3tc.stex"
+path.etc="res://.import/lithograph1__self_portrait_of_an_angel3-0050.png-be0780bc5552b32d8a7c33ce90fb6bec.etc.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://img/la criatura/lithograph1__self_portrait_of_an_angel3-0050.png"
+dest_files=[ "res://.import/lithograph1__self_portrait_of_an_angel3-0050.png-be0780bc5552b32d8a7c33ce90fb6bec.s3tc.stex", "res://.import/lithograph1__self_portrait_of_an_angel3-0050.png-be0780bc5552b32d8a7c33ce90fb6bec.etc.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
