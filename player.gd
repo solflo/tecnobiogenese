@@ -18,6 +18,8 @@ func _input(event):
 		rotate_y(deg2rad(-1 * event.relative.x * MOUSE_SENSITIVITY))
 		look_pivot.rotate_x(deg2rad(event.relative.y) * MOUSE_SENSITIVITY)
 		look_pivot.rotation.x = clamp(look_pivot.rotation.x, deg2rad(-90), deg2rad(90))
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().quit()
 
 func _physics_process(_delta):
 	MOVE_SPEED = WALK_SPEED
