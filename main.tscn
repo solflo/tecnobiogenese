@@ -1,7 +1,7 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://img/la criatura/0b1752b411b3778aa99b4684fcb8.jpg" type="Texture" id=1]
-[ext_resource path="res://player.gd" type="Script" id=2]
+[ext_resource path="res://scripts/player.gd" type="Script" id=2]
 [ext_resource path="res://anjo.tscn" type="PackedScene" id=3]
 [ext_resource path="res://player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://img/gifAnjo.tres" type="Texture" id=5]
@@ -41,6 +41,13 @@
 [ext_resource path="res://meat.tscn" type="PackedScene" id=39]
 [ext_resource path="res://hacker.tscn" type="PackedScene" id=40]
 [ext_resource path="res://vulto.tscn" type="PackedScene" id=41]
+[ext_resource path="res://scripts/path.gd" type="Script" id=42]
+
+[sub_resource type="Curve3D" id=10]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -53.6948, 4.1967, -75.0834, 0, 0, 0, 0, 0, 0, -24.2022, 4.1967, -70.8707, 0, 0, 0, 0, 0, 0, -7.00472, 10.0085, -39.4428, 0, 0, 0, 0, 0, 0, 9.5714, 10.3806, -10.07, 0, 0, 0, 0, 0, 0, 27.6475, 23.6998, 45.0803, 0, 0, 0, 0, 0, 0, 9.5714, 27.5053, 62.2943, 0, 0, 0, 0, 0, 0, -32.3841, 21.7653, 82.6758, 0, 0, 0, 0, 0, 0, -69.4613, 13.481, 65.8126, 0, 0, 0, 0, 0, 0, -97.9335, 15.6132, 18.766, 0, 0, 0, 0, 0, 0, -87.4684, 5.14808, -54.4646, 0, 0, 0, 0, 0, 0, -69.3924, 3.72102, -68.3641, 0, 0, 0, 0, 0, 0, -53.6948, 4.1967, -75.0834 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
+}
 
 [sub_resource type="PrismMesh" id=9]
 flip_faces = true
@@ -74,6 +81,56 @@ material = SubResource( 4 )
 flip_faces = true
 
 [node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -100.979, -0.373298, 24.0035 )
+script = ExtResource( 42 )
+
+[node name="SpawnPath" type="Path" parent="."]
+curve = SubResource( 10 )
+
+[node name="SpawnLoc" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.999996, -53.6948, 4.1967, -75.0834 )
+rotation_mode = 1
+
+[node name="a01" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.557, -2.98023e-08, 2.98023e-08, 2.98023e-08, 2.70332, -3.72529e-09, 0, 4.47035e-08, 1.33029, -49.0882, -0.373298, 99.3412 )
+billboard = 1
+texture = ExtResource( 17 )
+
+[node name="a02" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 85.4246, 23.7196, 39.6125 )
+billboard = 1
+texture = ExtResource( 27 )
+
+[node name="a03" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, -15.5901, 38.9666, 132.066 )
+billboard = 1
+texture = ExtResource( 24 )
+
+[node name="a04" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 11.7582, 14.6644, 135.989 )
+flip_h = true
+billboard = 1
+texture = ExtResource( 22 )
+
+[node name="a05" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 30.471, 2.17225, 45.5196 )
+billboard = 1
+texture = ExtResource( 23 )
+
+[node name="a06" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, -29.2222, 12.834, 65.2775 )
+billboard = 1
+texture = ExtResource( 26 )
+
+[node name="a07" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 68.6804, 14.4604, 96.7601 )
+billboard = 1
+texture = ExtResource( 25 )
+
+[node name="a08" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.53303, 0, 0.94429, -7.45058e-08, 2.70332, 0, -0.349308, 2.23517e-08, 0.937008, -4.16023, 36.8248, 49.9812 )
+billboard = 1
+texture = ExtResource( 21 )
 
 [node name="temp_DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 0.438362, 0.89846, 0.0246458, -0.316179, 0.128481, 0.939959, 0.84135, -0.419835, 0.340395, 71.902, 37.0109, 18.6794 )
@@ -90,7 +147,7 @@ script = ExtResource( 2 )
 [node name="telas" type="Node" parent="."]
 
 [node name="anjo2" type="Sprite3D" parent="telas"]
-transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -139.756, 3.98256, 0.7864 )
+transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -240.563, 3.98256, 24.1433 )
 billboard = 1
 shaded = true
 texture = ExtResource( 6 )
@@ -111,7 +168,7 @@ spot_range = 27.634
 spot_angle = 35.4827
 
 [node name="pequeno" type="Spatial" parent="telas"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -19 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -94.807, 2, 4.35692 )
 
 [node name="darc" type="Sprite3D" parent="telas/pequeno"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 105.186, 0, 33.8907 )
@@ -164,7 +221,7 @@ shaded = true
 texture = ExtResource( 8 )
 
 [node name="médio" type="Spatial" parent="telas"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -19 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -94.807, 2, 4.35692 )
 
 [node name="plankton" type="Sprite3D" parent="telas/médio"]
 transform = Transform( -6.55671e-08, 0, 1, 0, 1.5, 0, -1.5, 0, -4.37114e-08, 74.9145, 0, 27.0532 )
@@ -199,7 +256,7 @@ shaded = true
 texture = ExtResource( 38 )
 
 [node name="grande" type="Spatial" parent="telas"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -19 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -94.807, 2, 4.35692 )
 
 [node name="graças" type="Sprite3D" parent="telas/grande"]
 transform = Transform( 2, 0, -7.10543e-15, 0, 2, 0, 1.42109e-14, 0, 1, -107.11, 0, -0.841938 )
@@ -214,7 +271,7 @@ shaded = true
 texture = ExtResource( 18 )
 
 [node name="vulto" type="Sprite3D" parent="telas/grande"]
-transform = Transform( 2.3, 0, 0, 0, 2.3, 0, 7.10543e-15, 0, 1, -66.4209, 0, 108.88 )
+transform = Transform( 2.3, 0, 0, 0, 2.3, 0, 7.10543e-15, 0, 1, -72.4209, 0, 113.88 )
 flip_h = true
 billboard = 1
 texture = ExtResource( 11 )
@@ -232,65 +289,22 @@ shaded = true
 texture = ExtResource( 20 )
 
 [node name="02" type="Sprite3D" parent="telas"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, 81.0192, 4.95144, -9.67194 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -13.7878, 4.95144, 13.685 )
 visible = false
 double_sided = false
 texture = ExtResource( 15 )
 
 [node name="03" type="Sprite3D" parent="telas"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, 76.3002, 4.95144, -9.67194 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -18.5068, 4.95144, 13.685 )
 visible = false
 double_sided = false
 texture = ExtResource( 10 )
 
 [node name="13" type="Sprite3D" parent="telas"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, 39.2204, 4.95144, -9.67194 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -55.5866, 4.95144, 13.685 )
 visible = false
 double_sided = false
 texture = ExtResource( 12 )
-
-[node name="aminais" type="Spatial" parent="."]
-
-[node name="a01" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, 60.1424, 13.6048, -55.4644 )
-billboard = 1
-texture = ExtResource( 17 )
-
-[node name="a02" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, 33.5326, 24.0929, 127.253 )
-billboard = 1
-texture = ExtResource( 27 )
-
-[node name="a03" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, -5.38664, 24.0909, 78.3102 )
-billboard = 1
-texture = ExtResource( 24 )
-
-[node name="a04" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, 25.624, 11.9326, 33.5743 )
-flip_h = true
-billboard = 1
-texture = ExtResource( 22 )
-
-[node name="a05" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, -76.9517, 2.54553, -53.8215 )
-billboard = 1
-texture = ExtResource( 23 )
-
-[node name="a06" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, 19.8664, 13.2073, -34.0636 )
-billboard = 1
-texture = ExtResource( 26 )
-
-[node name="a07" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, -149.747, 23.9178, 59.419 )
-billboard = 1
-texture = ExtResource( 25 )
-
-[node name="a08" type="Sprite3D" parent="aminais"]
-transform = Transform( 2.53303, 0, 0.94429, 0, 2.70332, 0, -0.349308, 0, 0.937008, -170.082, 20.9893, -108.693 )
-billboard = 1
-texture = ExtResource( 21 )
 
 [node name="carpete" type="Sprite3D" parent="."]
 transform = Transform( 2.5871, -7.90018e-22, -3.45329e-29, 0, -4.37114e-08, 1, -3.05368e-22, -1, -4.37114e-08, -133.663, -2.79079, 10.8004 )

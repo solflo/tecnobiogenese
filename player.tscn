@@ -27,6 +27,7 @@ material/0 = null
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.1772, 0.472918 )
 current = true
 fov = 60.0
+far = 150.0
 
 [node name="SpotLight" type="SpotLight" parent="lookPivot"]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1, 0 )
