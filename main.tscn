@@ -140,7 +140,7 @@ shaded = true
 texture = ExtResource( 29 )
 
 [node name="pc" type="Sprite3D" parent="telas/pequeno"]
-transform = Transform( 1.2, 0, 1.19209e-07, 0, 1.2, 0, -1.43051e-07, 0, 1, 87.7751, 0, 7.52385 )
+transform = Transform( 1.2, 0, 1.19209e-07, 0, 1.2, 0, -1.43051e-07, 0, 1, 87.7751, 0, -0.476151 )
 shaded = true
 texture = ExtResource( 31 )
 
@@ -182,16 +182,19 @@ texture = ExtResource( 7 )
 
 [node name="new age" type="Sprite3D" parent="telas/médio"]
 transform = Transform( 1.44889, 0, 0.258819, 0, 1.5, 0, -0.388229, 0, 0.965926, 40.8382, 0, 1.91391 )
+billboard = 2
 shaded = true
 texture = ExtResource( 33 )
 
 [node name="carpete2" type="Sprite3D" parent="telas/médio"]
 transform = Transform( 1.5, 0, 1.74846e-07, 0, 1.5, 0, -2.62269e-07, 0, 1, -31.4799, 0, 7.50192 )
+billboard = 2
 shaded = true
 texture = ExtResource( 36 )
 
 [node name="deserto" type="Sprite3D" parent="telas/médio"]
 transform = Transform( 1.5, 0, 1.74846e-07, 0, 1.5, 0, -2.62269e-07, 0, 1, 12.0212, 0, -7.94443 )
+billboard = 2
 shaded = true
 texture = ExtResource( 38 )
 

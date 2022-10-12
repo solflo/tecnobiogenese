@@ -20,6 +20,8 @@ func _input(event):
 		look_pivot.rotation.x = clamp(look_pivot.rotation.x, deg2rad(-90), deg2rad(90))
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().quit()
+	if event.is_action_pressed("toggle_fullscreen"):
+		OS.window_fullscreen = !OS.window_fullscreen
 
 func _physics_process(_delta):
 	MOVE_SPEED = WALK_SPEED
