@@ -4,12 +4,14 @@
 sky_top_color = Color( 0, 0, 0, 1 )
 sky_horizon_color = Color( 0, 0, 0, 1 )
 sky_curve = 0.5649
-ground_bottom_color = Color( 0.132812, 0.0435791, 0.0828418, 1 )
+ground_bottom_color = Color( 0, 0, 0, 1 )
 ground_horizon_color = Color( 0, 0, 0, 1 )
 ground_curve = 0.0443828
-sun_color = Color( 0.0509804, 0, 0, 1 )
-sun_latitude = 6.77
-sun_longitude = 38.88
+sun_color = Color( 0.588235, 0.576471, 0.588235, 1 )
+sun_latitude = 12.89
+sun_longitude = -90.0
+sun_curve = 0.0164938
+sun_energy = 0.5
 texture_size = 0
 
 [resource]

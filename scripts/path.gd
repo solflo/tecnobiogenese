@@ -20,5 +20,5 @@ func _ready():
 
 
 func _process(delta: float) -> void:
-		t += delta
-		$SpawnPath/SpawnLoc.offset = t * random_speed
+	t += delta
+	$SpawnPath/SpawnLoc.offset = t * random_speed
