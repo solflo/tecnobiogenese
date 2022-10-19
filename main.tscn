@@ -88,47 +88,83 @@ script = ExtResource( 42 )
 curve = SubResource( 10 )
 
 [node name="SpawnLoc" type="PathFollow" parent="SpawnPath"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.999996, -53.6948, 4.1967, -75.0834 )
+transform = Transform( 0.482353, 0, -0.875973, 0, 1, 0, 0.875977, 0, 0.482351, 17.4483, 16.1846, 13.9624 )
+offset = 125.48
 rotation_mode = 1
 
 [node name="a01" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.557, -2.98023e-08, 2.98023e-08, 2.98023e-08, 2.70332, -3.72529e-09, 0, 4.47035e-08, 1.33029, -49.0882, -0.373298, 99.3412 )
+transform = Transform( 2.557, -2.98023e-08, 2.98023e-08, 2.98023e-08, 2.70332, -3.72529e-09, 0, 4.47035e-08, 1.33029, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 17 )
 
-[node name="a02" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 85.4246, 23.7196, 39.6125 )
+[node name="SpawnLoc2" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.386541, 0, -0.922268, 0, 1, 0, 0.922272, 0, -0.38654, -18.6863, 23.6393, 76.0216 )
+offset = 215.97
+rotation_mode = 1
+
+[node name="a02" type="Sprite3D" parent="SpawnPath/SpawnLoc2"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 27 )
 
-[node name="a03" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, -15.5901, 38.9666, 132.066 )
+[node name="SpawnLoc3" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.313698, 0, -0.949519, 0, 1, 0, 0.949523, 0, 0.313697, -4.61204, 10.0622, -35.203 )
+offset = 70.75
+rotation_mode = 1
+
+[node name="a03" type="Sprite3D" parent="SpawnPath/SpawnLoc3"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 24 )
 
-[node name="a04" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 11.7582, 14.6644, 135.989 )
+[node name="SpawnLoc4" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.5922, 0, -0.805788, 0, 1, 0, 0.805791, 0, 0.592197, -22.4211, 4.7986, -67.6159 )
+offset = 33.51
+rotation_mode = 1
+
+[node name="a04" type="Sprite3D" parent="SpawnPath/SpawnLoc4"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
 flip_h = true
 billboard = 1
 texture = ExtResource( 22 )
 
-[node name="a05" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 30.471, 2.17225, 45.5196 )
+[node name="SpawnLoc5" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.7381, 0, 0.674689, 0, 1, 0, -0.674692, 0, -0.738097, -90.2446, 15.0374, 31.471 )
+offset = 312.78
+rotation_mode = 1
+
+[node name="a05" type="Sprite3D" parent="SpawnPath/SpawnLoc5"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 23 )
 
-[node name="a06" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, -29.2222, 12.834, 65.2775 )
+[node name="SpawnLoc6" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.996083, 0, -0.0884245, 0, 1, 0, 0.0884247, 0, -0.996079, 13.4735, 26.6838, 58.5783 )
+offset = 178.98
+rotation_mode = 1
+
+[node name="a06" type="Sprite3D" parent="SpawnPath/SpawnLoc6"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 26 )
 
-[node name="a07" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 68.6804, 14.4604, 96.7601 )
+[node name="SpawnLoc7" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.292189, 0, 0.956357, 0, 1, 0, -0.956361, 0, 0.292188, -94.2977, 11.9774, -6.67604 )
+offset = 353.74
+rotation_mode = 1
+
+[node name="a07" type="Sprite3D" parent="SpawnPath/SpawnLoc7"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 25 )
 
-[node name="a08" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.53303, 0, 0.94429, -7.45058e-08, 2.70332, 0, -0.349308, 2.23517e-08, 0.937008, -4.16023, 36.8248, 49.9812 )
+[node name="SpawnLoc8" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.456747, 0, 0.889593, 0, 1, 0, -0.889597, 0, 0.456745, -82.361, 4.74486, -58.3919 )
+offset = 409.6
+rotation_mode = 1
+
+[node name="a08" type="Sprite3D" parent="SpawnPath/SpawnLoc8"]
+transform = Transform( 2.53303, 0, 0.94429, -7.45058e-08, 2.70332, 0, -0.349308, 2.23517e-08, 0.937008, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 21 )
 
@@ -147,7 +183,7 @@ script = ExtResource( 2 )
 [node name="telas" type="Node" parent="."]
 
 [node name="anjo2" type="Sprite3D" parent="telas"]
-transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -240.563, 3.98256, 24.1433 )
+transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -244.563, 3.98256, 24.1433 )
 billboard = 1
 shaded = true
 texture = ExtResource( 6 )
