@@ -1,7 +1,7 @@
 extends Spatial
 
-export var min_speed = 2 # never works with negatives :/
-export var max_speed = 7
+var min_speed = 2 # never works with negatives :/
+var max_speed = 7
 var random_speed = []
 
 func _ready():
@@ -9,8 +9,6 @@ func _ready():
 	
 	for _i in range(8):
 		random_speed.append(rand_range(min_speed, max_speed))
-	
-	print(random_speed)
 
 
 

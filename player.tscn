@@ -1,4 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://black_env.tres" type="Environment" id=1]
+[ext_resource path="res://environment.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 
@@ -25,9 +28,11 @@ material/0 = null
 
 [node name="Camera" type="Camera" parent="lookPivot"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.1772, 0.472918 )
+environment = ExtResource( 1 )
 current = true
 fov = 60.0
 far = 150.0
+script = ExtResource( 2 )
 
 [node name="SpotLight" type="SpotLight" parent="lookPivot"]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1, 0 )

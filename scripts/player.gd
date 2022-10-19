@@ -3,9 +3,10 @@
 extends KinematicBody
 
 const MOUSE_SENSITIVITY: float = 0.3
-var MOVE_SPEED #: float = 1.0
 const WALK_SPEED: float = 10.0
 const RUN_SPEED: float = 30.0
+
+var move_speed #: float = 1.0
 
 onready var look_pivot: Spatial = $lookPivot
 
@@ -24,14 +25,14 @@ func _input(event):
 		OS.window_fullscreen = !OS.window_fullscreen
 
 func _physics_process(_delta):
-	MOVE_SPEED = WALK_SPEED
+	move_speed = WALK_SPEED
 	if Input.is_action_pressed("run"):
-		MOVE_SPEED = RUN_SPEED
+		move_speed = RUN_SPEED
 	else:
-		MOVE_SPEED = WALK_SPEED
+		move_speed = WALK_SPEED
 	var input_direction = get_input_direction()
 # warning-ignore:return_value_discarded
-	move_and_slide(input_direction * MOVE_SPEED, Vector3.UP)
+	move_and_slide(input_direction * move_speed, Vector3.UP)
 	
 func get_input_direction() -> Vector3:
 	var z: float = (
