@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://environments/black_env.tres" type="Environment" id=1]
+[ext_resource path="res://scripts/environment.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+
+[sub_resource type="CapsuleMesh" id=2]
+
+[node name="KinematicBody" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.409, 0 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 14.0749
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.6, 0, 0, 0, -2.62268e-08, -1, 0, 0.6, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CollisionShape"]
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="lookPivot" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="lookPivot"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.1772, 0.472918 )
+environment = ExtResource( 1 )
+current = true
+fov = 60.0
+far = 150.0
+script = ExtResource( 2 )
+
+[node name="SpotLight" type="SpotLight" parent="lookPivot"]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1, 0 )
+visible = false
+light_energy = 1.649
+spot_range = 10.3389
+spot_angle = 37.3215

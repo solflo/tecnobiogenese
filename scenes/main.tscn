@@ -1,0 +1,775 @@
+[gd_scene load_steps=54 format=2]
+
+[ext_resource path="res://resources/la criatura/0b1752b411b3778aa99b4684fcb8.jpg" type="Texture" id=1]
+[ext_resource path="res://scripts/player.gd" type="Script" id=2]
+[ext_resource path="res://scenes/anjo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://resources/gifAnjo.tres" type="Texture" id=5]
+[ext_resource path="res://resources/gif anjo/007.png" type="Texture" id=6]
+[ext_resource path="res://resources/la criatura/angelic post-apocalypse thyme 3.png" type="Texture" id=7]
+[ext_resource path="res://resources/la criatura/angel of death and decay.png" type="Texture" id=8]
+[ext_resource path="res://resources/la criatura/24acee880b8fc55eed36.jpg" type="Texture" id=9]
+[ext_resource path="res://resources/la criatura/9.png" type="Texture" id=10]
+[ext_resource path="res://resources/la criatura/b9ce13a1a3a29e12cfda.jpeg" type="Texture" id=11]
+[ext_resource path="res://resources/la criatura/digital silica exoeskeleton.png" type="Texture" id=12]
+[ext_resource path="res://resources/la criatura/4.png" type="Texture" id=13]
+[ext_resource path="res://resources/la criatura/angel.png" type="Texture" id=14]
+[ext_resource path="res://resources/la criatura/5.png" type="Texture" id=15]
+[ext_resource path="res://resources/la criatura/big data creature crop.png" type="Texture" id=16]
+[ext_resource path="res://resources/aminais/01.png" type="Texture" id=17]
+[ext_resource path="res://resources/la criatura/9042c3720a85e796e3a8.jpg" type="Texture" id=18]
+[ext_resource path="res://resources/la criatura/angel fairy plankton.png" type="Texture" id=19]
+[ext_resource path="res://resources/la criatura/a4c860bc0017466b5b312221bca3.jpeg" type="Texture" id=20]
+[ext_resource path="res://resources/aminais/08.png" type="Texture" id=21]
+[ext_resource path="res://resources/aminais/04.png" type="Texture" id=22]
+[ext_resource path="res://resources/aminais/05.png" type="Texture" id=23]
+[ext_resource path="res://resources/aminais/03.png" type="Texture" id=24]
+[ext_resource path="res://resources/aminais/07.png" type="Texture" id=25]
+[ext_resource path="res://resources/aminais/06.png" type="Texture" id=26]
+[ext_resource path="res://resources/aminais/02.png" type="Texture" id=27]
+[ext_resource path="res://resources/materialAnjo.tres" type="Material" id=28]
+[ext_resource path="res://resources/la criatura/0100.png" type="Texture" id=29]
+[ext_resource path="res://resources/la criatura/gentle_carrion_viscera-0350.png" type="Texture" id=30]
+[ext_resource path="res://resources/la criatura/computer__saint-0400.png" type="Texture" id=31]
+[ext_resource path="res://resources/la criatura/lithograph1__self_portrait_of_an_angel3-0050.png" type="Texture" id=32]
+[ext_resource path="res://resources/la criatura/transangelic_revelation-0400.png" type="Texture" id=33]
+[ext_resource path="res://resources/la criatura/hacker_matrix_code_angel_fairy-0400.png" type="Texture" id=34]
+[ext_resource path="res://resources/la criatura/joan_of_arc-0050.png" type="Texture" id=35]
+[ext_resource path="res://resources/la criatura/transangelic_apocalypse-0400.png" type="Texture" id=36]
+[ext_resource path="res://resources/la criatura/still_life_meat-0100.png" type="Texture" id=37]
+[ext_resource path="res://resources/la criatura/angelic_postapocalypse-0050.png" type="Texture" id=38]
+[ext_resource path="res://scenes/meat.tscn" type="PackedScene" id=39]
+[ext_resource path="res://scenes/hacker.tscn" type="PackedScene" id=40]
+[ext_resource path="res://scenes/vulto.tscn" type="PackedScene" id=41]
+[ext_resource path="res://scripts/path.gd" type="Script" id=42]
+
+[sub_resource type="Curve3D" id=10]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -31.4022, 4.19669, -85.3912, 0, 0, 0, 0, 0, 0, -0.331215, 4.19669, -87.6105, 0, 0, 0, 0, 0, 0, 30.979, 23.3733, -63.0035, 0, 0, 0, 0, 0, 0, 34.6237, 24.8687, -15.1122, 0, 0, 0, 0, 0, 0, 32.4043, 23.6998, 52.7639, 0, 0, 0, 0, 0, 0, -39.17, 27.5053, 123.228, 0, 0, 0, 0, 0, 0, -136.822, 34.8753, 96.5962, 0, 0, 0, 0, 0, 0, -193.97, 14.3462, 67.4671, 0, 0, 0, 0, 0, 0, -212.835, 15.6132, 11.1509, 0, 0, 0, 0, 0, 0, -181.209, 16.6448, -15.8832, 0, 0, 0, 0, 0, 0, -140.151, 3.72102, -57.0944, 0, 0, 0, 0, 0, 0, -88.5507, 11.2478, -43.639, 0, 0, 0, 0, 0, 0, -80.783, 11.5048, -7.91628, 0, 0, 0, 0, 0, 0, -113.518, 19.4717, 41.1703, 0, 0, 0, 0, 0, 0, -161.79, 9.70582, 62.5012, 0, 0, 0, 0, 0, 0, -211.725, -2.63008, 52.2213, 0, 0, 0, 0, 0, 0, -220.048, 4.19669, -18.8104, 0, 0, 0, 0, 0, 0, -182.873, 26.6677, -43.896, 0, 0, 0, 0, 0, 0, -135.712, 17.6728, -73.7078, 0, 0, 0, 0, 0, 0, -56.37, 2.50988, -73.1938, 0, 0, 0, 0, 0, 0, -29.1829, 6.62184, 16.2415, 0, 0, 0, 0, 0, 0, -28.0732, 40.9785, 55.8155, 0, 0, 0, 0, 0, 0, -63.0281, -0.317108, 68.6691, 0, 0, 0, 0, 0, 0, -96.3185, 0.475256, 93.5446, 0, 0, 0, 0, 0, 0, -101.867, -2.85379, 124.061, 0, 0, 0, 0, 0, 0, -59.699, 4.19669, 148.196, 0, 0, 0, 0, 0, 0, -12.5377, 14.3462, 132.383, 0, 0, 0, 0, 0, 0, 11.3204, 13.2366, 101.312, 0, 0, 0, 0, 0, 0, 11.8752, 11.5048, 54.7912, 0, 0, 0, 0, 0, 0, -8.65379, 11.5048, 31.4044, 0, 0, 0, 0, 0, 0, -39.17, -2.37309, -47.751, 0, 0, 0, 0, 0, 0, -31.4022, 4.19669, -85.3912 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
+}
+
+[sub_resource type="PrismMesh" id=9]
+flip_faces = true
+left_to_right = 1.0
+
+[sub_resource type="CubeMesh" id=1]
+flip_faces = true
+
+[sub_resource type="SpatialMaterial" id=2]
+roughness = 0.58
+
+[sub_resource type="CubeMesh" id=11]
+
+[sub_resource type="CubeMesh" id=5]
+
+[sub_resource type="CubeMesh" id=8]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id=6]
+size = Vector2( 6, 6 )
+
+[sub_resource type="PrismMesh" id=7]
+material = ExtResource( 28 )
+flip_faces = true
+left_to_right = 0.1
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_unshaded = true
+albedo_texture = ExtResource( 5 )
+
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 4 )
+flip_faces = true
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -100.979, -0.373298, 24.0035 )
+script = ExtResource( 42 )
+
+[node name="SpawnPath" type="Path" parent="."]
+curve = SubResource( 10 )
+
+[node name="SpawnLoc" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.482353, 0, -0.875973, 0, 1, 0, 0.875977, 0, 0.482351, -31.4022, 4.19669, -85.3912 )
+rotation_mode = 1
+
+[node name="a01" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
+transform = Transform( 2.557, -2.98023e-08, 2.98023e-08, 2.98023e-08, 2.70332, -3.72529e-09, 0, 4.47035e-08, 1.33029, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 17 )
+
+[node name="SpawnLoc2" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.406812, 0, 0.913508, 0, 1, 0, -0.913512, 0, -0.406809, 13.9346, 24.6818, 70.9473 )
+offset = 216.71
+rotation_mode = 1
+
+[node name="a02" type="Sprite3D" parent="SpawnPath/SpawnLoc2"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 27 )
+
+[node name="SpawnLoc3" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.900578, 0, -0.434694, 0, 1, 0, 0.434695, 0, -0.900574, -148.198, 30.7888, 90.7978 )
+offset = 404.64
+rotation_mode = 1
+
+[node name="a03" type="Sprite3D" parent="SpawnPath/SpawnLoc3"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 24 )
+
+[node name="SpawnLoc4" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.762338, 0, -0.647176, 0, 1, 0, 0.647179, 0, -0.762335, -86.8913, 11.3027, -36.0074 )
+offset = 681.1
+rotation_mode = 1
+
+[node name="a04" type="Sprite3D" parent="SpawnPath/SpawnLoc4"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+flip_h = true
+billboard = 1
+texture = ExtResource( 22 )
+
+[node name="SpawnLoc5" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.986165, 0, 0.165771, 0, 1, 0, -0.165772, 0, 0.986161, -99.0354, 15.947, 19.4531 )
+offset = 743.02
+rotation_mode = 1
+
+[node name="a05" type="Sprite3D" parent="SpawnPath/SpawnLoc5"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 23 )
+
+[node name="SpawnLoc6" type="PathFollow" parent="SpawnPath"]
+transform = Transform( -0.784703, 0, 0.61987, 0, 1, 0, -0.619872, 0, -0.7847, -106.477, 12.0857, -73.5184 )
+offset = 1083.62
+rotation_mode = 1
+
+[node name="a06" type="Sprite3D" parent="SpawnPath/SpawnLoc6"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 26 )
+
+[node name="SpawnLoc7" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.176904, 0, -0.984225, 0, 1, 0, 0.984228, 0, 0.176903, -48.7882, 3.6566, -48.2526 )
+offset = 1160.96
+rotation_mode = 1
+
+[node name="a07" type="Sprite3D" parent="SpawnPath/SpawnLoc7"]
+transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 25 )
+
+[node name="SpawnLoc8" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 0.185628, 0, 0.982616, 0, 1, 0, -0.98262, 0, 0.185627, -194.992, 16.1952, -4.10117 )
+offset = 541.78
+rotation_mode = 1
+
+[node name="a08" type="Sprite3D" parent="SpawnPath/SpawnLoc8"]
+transform = Transform( 2.53303, 0, 0.94429, -7.45058e-08, 2.70332, 0, -0.349308, 2.23517e-08, 0.937008, 0, 0, 0 )
+billboard = 1
+texture = ExtResource( 21 )
+
+[node name="temp_DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.438362, 0.89846, 0.0246458, -0.316179, 0.128481, 0.939959, 0.84135, -0.419835, 0.340395, 71.902, 37.0109, 18.6794 )
+shadow_enabled = true
+
+[node name="temp_DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( 0.438362, 0.89846, 0.0246458, 0.146856, -0.0986501, 0.984226, 0.88672, -0.427828, -0.175189, 71.902, 37.0109, -14.3206 )
+shadow_enabled = true
+
+[node name="player" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 113.048, 1.409, -0.6029 )
+script = ExtResource( 2 )
+
+[node name="telas" type="Node" parent="."]
+
+[node name="anjo2" type="Sprite3D" parent="telas"]
+transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -238.563, 7.98256, 24.1433 )
+billboard = 1
+shaded = true
+texture = ExtResource( 6 )
+
+[node name="SpotLightA" type="SpotLight" parent="telas/anjo2"]
+transform = Transform( 0.148652, -3.05089e-09, -0.1338, -0.0466937, 0.187426, -0.0518768, 0.626941, 0.348981, 0.696533, -2.50798, -0.796512, 15.756 )
+light_color = Color( 0.670588, 0.917647, 0.560784, 1 )
+light_energy = 3.349
+spot_range = 23.7234
+spot_attenuation = 0.466516
+spot_angle = 35.4827
+
+[node name="SpotLightA2" type="SpotLight" parent="telas/anjo2"]
+transform = Transform( 0.161086, -0.0396443, 0.111712, 0.0431118, 0.195169, 0.0070954, -0.552101, 0.0918281, 0.828705, 3.29201, 1.40349, 15.756 )
+light_color = Color( 0.968627, 0.658824, 0.988235, 1 )
+light_energy = 3.202
+spot_range = 27.634
+spot_angle = 35.4827
+
+[node name="pequeno" type="Spatial" parent="telas"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -94.807, 2, 4.35692 )
+
+[node name="darc" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 105.186, 0, 33.8907 )
+shaded = true
+texture = ExtResource( 35 )
+
+[node name="lito" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( -0.949852, 0, -0.3127, 0, 1, 0, 0.3127, 0, -0.949852, 98.3107, 0, 41.4653 )
+shaded = true
+texture = ExtResource( 32 )
+
+[node name="carne" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 69.2414, 0, 38.956 )
+visible = false
+shaded = true
+texture = ExtResource( 37 )
+
+[node name="viscera" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( -0.956391, 0, 0.292088, 0, 1, 0, -0.292088, 0, -0.956391, 53.2412, 0, 41.2372 )
+shaded = true
+texture = ExtResource( 30 )
+
+[node name="abs" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( -0.991518, 0, -0.129973, 0, 1, 0, 0.129973, 0, -0.991518, 86.6819, 0, 44.5799 )
+shaded = true
+texture = ExtResource( 29 )
+
+[node name="pc" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( 1.2, 0, 1.19209e-07, 0, 1.2, 0, -1.43051e-07, 0, 1, 87.7751, 0, -0.476151 )
+shaded = true
+texture = ExtResource( 31 )
+
+[node name="matrix" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( 1.2, 0, 1.19209e-07, 0, 1.2, 0, -1.43051e-07, 0, 1, -4.4351, 0, -43.672 )
+texture = ExtResource( 34 )
+
+[node name="hylics" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 81.1644, 0, 9.328 )
+shaded = true
+texture = ExtResource( 13 )
+
+[node name="spider" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( -0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, 93.0363, 0, 18.3281 )
+shaded = true
+texture = ExtResource( 16 )
+
+[node name="apo" type="Sprite3D" parent="telas/pequeno"]
+transform = Transform( 0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 103.075, 0, 4.63875 )
+shaded = true
+texture = ExtResource( 8 )
+
+[node name="médio" type="Spatial" parent="telas"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -94.807, 2, 4.35692 )
+
+[node name="plankton" type="Sprite3D" parent="telas/médio"]
+transform = Transform( -6.55671e-08, 0, 1, 0, 1.5, 0, -1.5, 0, -4.37114e-08, 74.9145, 0, 27.0532 )
+shaded = true
+texture = ExtResource( 19 )
+
+[node name="anjos 5" type="Sprite3D" parent="telas/médio"]
+transform = Transform( -6.55671e-08, 0, 1, 0, 1.5, 0, -1.5, 0, -4.37114e-08, 51.4464, 0, 19.3728 )
+texture = ExtResource( 14 )
+
+[node name="apoc" type="Sprite3D" parent="telas/médio"]
+transform = Transform( 1.06066, 0, 0.707107, 0, 1.5, 0, -1.06066, 0, 0.707107, 73.7501, 0, -5.31464 )
+shaded = true
+texture = ExtResource( 7 )
+
+[node name="new age" type="Sprite3D" parent="telas/médio"]
+transform = Transform( 1.44889, 0, 0.258819, 0, 1.5, 0, -0.388229, 0, 0.965926, 40.8382, 0, 1.91391 )
+billboard = 2
+shaded = true
+texture = ExtResource( 33 )
+
+[node name="carpete2" type="Sprite3D" parent="telas/médio"]
+transform = Transform( 1.5, 0, 1.74846e-07, 0, 1.5, 0, -2.62269e-07, 0, 1, -31.4799, 0, 7.50192 )
+billboard = 2
+shaded = true
+texture = ExtResource( 36 )
+
+[node name="deserto" type="Sprite3D" parent="telas/médio"]
+transform = Transform( 1.5, 0, 1.74846e-07, 0, 1.5, 0, -2.62269e-07, 0, 1, 12.0212, 0, -7.94443 )
+billboard = 2
+shaded = true
+texture = ExtResource( 38 )
+
+[node name="grande" type="Spatial" parent="telas"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -94.807, 2, 4.35692 )
+
+[node name="graças" type="Sprite3D" parent="telas/grande"]
+transform = Transform( 2, 0, -7.10543e-15, 0, 2, 0, 1.42109e-14, 0, 1, -107.11, 0, -0.841938 )
+billboard = 1
+shaded = true
+texture = ExtResource( 1 )
+
+[node name="nave" type="Sprite3D" parent="telas/grande"]
+transform = Transform( -2, 0, 1.50996e-07, 0, 2, 0, -3.01992e-07, 0, -1, -51.7798, 0, 46.3991 )
+billboard = 1
+shaded = true
+texture = ExtResource( 18 )
+
+[node name="vulto" type="Sprite3D" parent="telas/grande"]
+transform = Transform( 2.3, 0, 0, 0, 2.3, 0, 7.10543e-15, 0, 1, -72.4209, 0, 113.88 )
+flip_h = true
+billboard = 1
+texture = ExtResource( 11 )
+
+[node name="igreja" type="Sprite3D" parent="telas/grande"]
+transform = Transform( -2, 0, 1.50996e-07, 0, 2, 0, -3.01992e-07, 0, -1, -5.70347, 0, 60.9383 )
+billboard = 1
+shaded = true
+texture = ExtResource( 9 )
+
+[node name="subaquatico" type="Sprite3D" parent="telas/grande"]
+transform = Transform( 2, 0, -7.10543e-15, 0, 2, 0, 1.42109e-14, 0, 1, -62.4214, 0, 6.83756 )
+billboard = 1
+shaded = true
+texture = ExtResource( 20 )
+
+[node name="02" type="Sprite3D" parent="telas"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -13.7878, 4.95144, 13.685 )
+visible = false
+double_sided = false
+texture = ExtResource( 15 )
+
+[node name="03" type="Sprite3D" parent="telas"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -18.5068, 4.95144, 13.685 )
+visible = false
+double_sided = false
+texture = ExtResource( 10 )
+
+[node name="13" type="Sprite3D" parent="telas"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -55.5866, 4.95144, 13.685 )
+visible = false
+double_sided = false
+texture = ExtResource( 12 )
+
+[node name="carpete" type="Sprite3D" parent="."]
+transform = Transform( 2.5871, -7.90018e-22, -3.45329e-29, 0, -4.37114e-08, 1, -3.05368e-22, -1, -4.37114e-08, -142.663, -2.79079, 10.8004 )
+centered = false
+opacity = 0.5
+pixel_size = 0.08
+shaded = true
+texture = ExtResource( 12 )
+
+[node name="room prism" type="MeshInstance" parent="."]
+transform = Transform( -24.8237, 0, -7.99497e-07, 0, 9.14518, 0, 2.17015e-06, 0, -9.14518, 70.6478, 9, -8.8174 )
+visible = false
+mesh = SubResource( 9 )
+material/0 = null
+
+[node name="room" type="MeshInstance" parent="."]
+transform = Transform( 50.1617, 0, 0, 0, 3, 0, 0, 0, 10, 52.2847, 3, 19 )
+visible = false
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="bloco torre" type="MeshInstance" parent="."]
+transform = Transform( 31, 0, 0, 0, 30.1962, -7.01354, 0, 7.01354, 30.1962, -172, 23.266, 10.3831 )
+mesh = SubResource( 11 )
+material/0 = ExtResource( 28 )
+
+[node name="torre" type="Spatial" parent="."]
+transform = Transform( 3, 0, 0, 0, 2.93013, -0.643694, 0, 0.643694, 2.93013, -143, 0, -26 )
+
+[node name="paredes" type="Spatial" parent="torre"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+
+[node name="anjo - chão" type="Spatial" parent="torre/paredes"]
+transform = Transform( 2.47004, 0, 0, 0, 2.47004, 0, 0, 0, 2.47004, 0, 0, 0 )
+
+[node name="chão" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+
+[node name="chão2" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="chão3" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="chão4" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="chão5" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2 )
+
+[node name="chão6" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6 )
+
+[node name="chão7" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2 )
+
+[node name="chão8" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 6 )
+
+[node name="chão9" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="chão10" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14 )
+
+[node name="chão11" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="chão12" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="chão13" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="chão14" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 14 )
+
+[node name="chão15" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 10 )
+
+[node name="chão16" parent="torre/paredes/anjo - chão" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 14 )
+
+[node name="anjo - chão2" type="Spatial" parent="torre/paredes"]
+transform = Transform( 2.47004, 0, 0, 0, 2.47004, 0, 0, 0, 2.47004, 0, 39.5206, 0 )
+
+[node name="chão" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+
+[node name="chão2" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="chão3" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="chão4" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="chão5" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2 )
+
+[node name="chão6" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6 )
+
+[node name="chão7" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2 )
+
+[node name="chão8" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 6 )
+
+[node name="chão9" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="chão10" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14 )
+
+[node name="chão11" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="chão12" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="chão13" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="chão14" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 14 )
+
+[node name="chão15" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 10 )
+
+[node name="chão16" parent="torre/paredes/anjo - chão2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 14 )
+
+[node name="anjo - parede" type="Spatial" parent="torre/paredes"]
+transform = Transform( -1.07969e-07, 2.47004, 0, 1.07969e-07, 4.71948e-15, -2.47004, -2.47004, -1.07969e-07, -1.07969e-07, 0, 39.5206, 0 )
+
+[node name="chão" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+
+[node name="chão2" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="chão3" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="chão4" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="chão5" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2 )
+
+[node name="chão6" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6 )
+
+[node name="chão7" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2 )
+
+[node name="chão8" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 6 )
+
+[node name="chão9" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="chão10" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, -2.11758e-22, 0, -2.11758e-22, 1, -2, 4.95616e-15, 14 )
+
+[node name="chão11" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="chão12" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="chão13" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="chão14" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 14 )
+
+[node name="chão15" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 10 )
+
+[node name="chão16" parent="torre/paredes/anjo - parede" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 14 )
+
+[node name="anjo - parede4" type="Spatial" parent="torre/paredes"]
+transform = Transform( -1.07969e-07, 2.47004, 0, 1.07969e-07, 4.71948e-15, -2.47004, -2.47004, -1.07969e-07, -1.07969e-07, -39.5206, 39.5206, 0 )
+
+[node name="chão" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+
+[node name="chão2" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="chão3" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="chão4" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="chão5" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2 )
+
+[node name="chão6" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6 )
+
+[node name="chão7" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2 )
+
+[node name="chão8" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 6 )
+
+[node name="chão9" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="chão10" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14 )
+
+[node name="chão11" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="chão12" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="chão13" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="chão14" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 14 )
+
+[node name="chão15" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 10 )
+
+[node name="chão16" parent="torre/paredes/anjo - parede4" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 14 )
+
+[node name="anjo - parede2" type="Spatial" parent="torre/paredes"]
+transform = Transform( 2.47004, 7.36129e-08, 1.07969e-07, 1.07969e-07, 4.71948e-15, -2.47004, -7.36129e-08, 2.47004, 0, 0, 39.5206, 39.5206 )
+
+[node name="chão" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+
+[node name="chão2" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="chão3" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="chão4" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="chão5" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2 )
+
+[node name="chão6" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6 )
+
+[node name="chão7" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2 )
+
+[node name="chão8" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 6 )
+
+[node name="chão9" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="chão10" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14 )
+
+[node name="chão11" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="chão12" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="chão13" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="chão14" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 14 )
+
+[node name="chão15" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 10 )
+
+[node name="chão16" parent="torre/paredes/anjo - parede2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 14 )
+
+[node name="anjo - parede3" type="Spatial" parent="torre/paredes"]
+transform = Transform( 2.47004, 7.36129e-08, 1.07969e-07, 1.07969e-07, 4.71948e-15, -2.47004, -7.36129e-08, 2.47004, 0, 0, 39.5206, 0 )
+
+[node name="chão" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+
+[node name="chão2" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="chão3" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="chão4" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="chão5" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2 )
+
+[node name="chão6" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6 )
+
+[node name="chão7" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2 )
+
+[node name="chão8" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 6 )
+
+[node name="chão9" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="chão10" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14 )
+
+[node name="chão11" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="chão12" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="chão13" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="chão14" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 14 )
+
+[node name="chão15" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 10 )
+
+[node name="chão16" parent="torre/paredes/anjo - parede3" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 14 )
+
+[node name="cubo01" type="MeshInstance" parent="torre"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -14.9945, 1.00608, 1.01916 )
+mesh = SubResource( 5 )
+material/0 = ExtResource( 28 )
+
+[node name="cubo04" type="MeshInstance" parent="torre"]
+transform = Transform( 1.93087, 0, 0, 0, 0.282648, -3.31094, 0, 1.98153, 0.472278, -2.04618, 1.76457, 1.43414 )
+mesh = SubResource( 5 )
+material/0 = ExtResource( 28 )
+
+[node name="cubo05" type="MeshInstance" parent="torre"]
+transform = Transform( 1.24771, 0.21571, -2.52683, -1.47359, 0.182645, -2.1395, 0, 1.98153, 0.472278, -15.2953, 1.76457, 11.6931 )
+mesh = SubResource( 5 )
+material/0 = ExtResource( 28 )
+
+[node name="cubo06" type="MeshInstance" parent="torre"]
+transform = Transform( -0.302349, -0.0522716, 0.61231, -0.592981, 0.722085, -0.706359, 0.634141, 0.969743, 1.17057, -15.2117, 10.8244, 3.95317 )
+mesh = SubResource( 8 )
+material/0 = ExtResource( 28 )
+
+[node name="cubo02" type="MeshInstance" parent="torre"]
+transform = Transform( 0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0, 0, 1, -14.9945, 2.51035, 1.01916 )
+mesh = SubResource( 5 )
+material/0 = ExtResource( 28 )
+
+[node name="cubo03" type="MeshInstance" parent="torre"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9945, 3.80517, 1.85803 )
+mesh = SubResource( 5 )
+material/0 = ExtResource( 28 )
+
+[node name="plano01" type="MeshInstance" parent="torre"]
+transform = Transform( 0.152966, 0.840585, 0.519632, -0.237374, 0.541679, -0.806373, -0.959299, 0, 0.282392, -12.234, 14.0478, 14.768 )
+mesh = SubResource( 6 )
+material/0 = ExtResource( 28 )
+
+[node name="piramide01" type="MeshInstance" parent="torre"]
+transform = Transform( 0.34978, 0.0602354, 0.31995, -0.524045, 0.104166, 0.553292, 3.44482e-08, -1.15589, 0.217614, -5.57628, 3.56077, 5.54567 )
+mesh = SubResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="piramide02" type="MeshInstance" parent="torre"]
+transform = Transform( -0.480944, -1.1726, -0.234761, -0.524045, 0.104166, 0.553292, -0.740702, 0.461656, -0.788462, -5.52302, 2.81273, 5.09497 )
+mesh = SubResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="piramide03" type="MeshInstance" parent="torre"]
+transform = Transform( -0.225966, -0.152978, 0.67027, 0.146669, -1.13885, 0.0540619, 0.569558, 0.173727, -0.0605889, -9.85294, 6.22267, 8.28335 )
+mesh = SubResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="piramide04" type="MeshInstance" parent="torre"]
+transform = Transform( -0.857858, -0.457046, 0.129026, -0.564431, 0.414052, -0.911806, -0.00818756, -1.10391, -0.367259, -10.5271, 5.99935, 8.79436 )
+mesh = SubResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="esfera" type="MeshInstance" parent="torre"]
+transform = Transform( 6.07278, 0, 0, 0, 3.14116, -2.73183, 0, 1.58217, 5.42362, -1.08396, 2.87264, 15.7642 )
+mesh = SubResource( 3 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 4 )
+
+[node name="OmniLight" type="OmniLight" parent="torre"]
+transform = Transform( 0.333333, 0, 0, 0, 0.333333, 2.98023e-08, 0, -2.98023e-08, 0.333333, -8.47625, 8.44829, 8.9898 )
+light_color = Color( 0.72549, 1, 0.627451, 1 )
+light_energy = 8.835
+omni_range = 10.1044
+
+[node name="OmniLight2" type="OmniLight" parent="torre"]
+transform = Transform( 0.333333, 0, 0, 0, 0.333333, 2.98023e-08, 0, -2.98023e-08, 0.333333, -5.24801, 4.11, 8.05453 )
+light_color = Color( 1, 0.627451, 0.803922, 1 )
+light_energy = 4.285
+omni_range = 19.1043
+
+[node name="SpotLight" type="SpotLight" parent="torre"]
+transform = Transform( -0.301226, -0.0754487, 0.121167, 0.141654, -0.123224, 0.275429, -0.0175503, 0.300391, 0.143417, -9.84602, 16.341, 16.1948 )
+light_color = Color( 0.439216, 0.521569, 0.854902, 1 )
+light_energy = 5.701
+light_indirect_energy = 4.817
+spot_range = 50.0169
+spot_angle = 21.0938
+
+[node name="OmniLight3" type="OmniLight" parent="torre"]
+transform = Transform( 0.333333, 0, 0, 0, 0.333333, 2.98023e-08, 0, -2.98023e-08, 0.333333, -14.0872, 9.94416, 4.29005 )
+light_color = Color( 1, 0.627451, 0.803922, 1 )
+light_energy = 4.285
+omni_range = 23.238
+
+[node name="meat" parent="." instance=ExtResource( 39 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 69.067, 0, 26 )
+
+[node name="hacker" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1702, -9.77136, -102.306 )
+
+[node name="vulto" parent="." instance=ExtResource( 41 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -66, -6, 100 )
