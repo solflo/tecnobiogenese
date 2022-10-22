@@ -99,7 +99,7 @@ billboard = 1
 texture = ExtResource( 17 )
 
 [node name="SpawnLoc2" type="PathFollow" parent="SpawnPath"]
-transform = Transform( -0.406812, 0, 0.913508, 0, 1, 0, -0.913512, 0, -0.406809, 13.9346, 24.6818, 70.9473 )
+transform = Transform( -0.406812, 0, 0.913508, 0, 1, 0, -0.913512, 0, -0.406809, 13.9345, 24.6818, 70.9472 )
 offset = 216.71
 rotation_mode = 1
 
@@ -109,7 +109,7 @@ billboard = 1
 texture = ExtResource( 27 )
 
 [node name="SpawnLoc3" type="PathFollow" parent="SpawnPath"]
-transform = Transform( -0.900578, 0, -0.434694, 0, 1, 0, 0.434695, 0, -0.900574, -148.198, 30.7888, 90.7978 )
+transform = Transform( -0.900578, 0, -0.434694, 0, 1, 0, 0.434695, 0, -0.900574, -147.256, 31.1271, 91.2778 )
 offset = 404.64
 rotation_mode = 1
 
@@ -119,7 +119,7 @@ billboard = 1
 texture = ExtResource( 24 )
 
 [node name="SpawnLoc4" type="PathFollow" parent="SpawnPath"]
-transform = Transform( -0.762338, 0, -0.647176, 0, 1, 0, 0.647179, 0, -0.762335, -86.8913, 11.3027, -36.0074 )
+transform = Transform( -0.762338, 0, -0.647176, 0, 1, 0, 0.647179, 0, -0.762335, -87.0004, 11.2991, -36.5092 )
 offset = 681.1
 rotation_mode = 1
 
@@ -130,7 +130,7 @@ billboard = 1
 texture = ExtResource( 22 )
 
 [node name="SpawnLoc5" type="PathFollow" parent="SpawnPath"]
-transform = Transform( 0.986165, 0, 0.165771, 0, 1, 0, -0.165772, 0, 0.986161, -99.0354, 15.947, 19.4531 )
+transform = Transform( 0.986165, 0, 0.165771, 0, 1, 0, -0.165772, 0, 0.986161, -98.7298, 15.8726, 18.9952 )
 offset = 743.02
 rotation_mode = 1
 
@@ -140,7 +140,7 @@ billboard = 1
 texture = ExtResource( 23 )
 
 [node name="SpawnLoc6" type="PathFollow" parent="SpawnPath"]
-transform = Transform( -0.784703, 0, 0.61987, 0, 1, 0, -0.619872, 0, -0.7847, -106.477, 12.0857, -73.5184 )
+transform = Transform( -0.784703, 0, 0.61987, 0, 1, 0, -0.619872, 0, -0.7847, -107.82, 12.3424, -73.5271 )
 offset = 1083.62
 rotation_mode = 1
 
@@ -150,7 +150,7 @@ billboard = 1
 texture = ExtResource( 26 )
 
 [node name="SpawnLoc7" type="PathFollow" parent="SpawnPath"]
-transform = Transform( 0.176904, 0, -0.984225, 0, 1, 0, 0.984228, 0, 0.176903, -48.7882, 3.6566, -48.2526 )
+transform = Transform( 0.176904, 0, -0.984225, 0, 1, 0, 0.984228, 0, 0.176903, -49.0926, 3.61056, -49.2539 )
 offset = 1160.96
 rotation_mode = 1
 
@@ -160,7 +160,7 @@ billboard = 1
 texture = ExtResource( 25 )
 
 [node name="SpawnLoc8" type="PathFollow" parent="SpawnPath"]
-transform = Transform( 0.185628, 0, 0.982616, 0, 1, 0, -0.98262, 0, 0.185627, -194.992, 16.1952, -4.10117 )
+transform = Transform( 0.185628, 0, 0.982616, 0, 1, 0, -0.98262, 0, 0.185627, -195.441, 16.1806, -3.71729 )
 offset = 541.78
 rotation_mode = 1
 

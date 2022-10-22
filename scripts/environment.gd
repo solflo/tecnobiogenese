@@ -2,8 +2,10 @@ extends Camera
 
 var red = preload("res://environments/red_env.tres")
 var black = preload("res://environments/black_env.tres")
+var panorama = preload("res://environments/panorama_env.tres")
+var keepblack = preload("res://environments/keepblack_env.tres")
 
-var envs = [red, black] # hardcoded but could maybe not be?
+var envs = [red, black, panorama, keepblack] # hardcoded but could maybe not be?
 var i := 0
 
 func toggle_sky():

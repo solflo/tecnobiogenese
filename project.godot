@@ -12,6 +12,8 @@ config_version=4
 
 config/name="tecnobiogenese"
 run/main_scene="res://scenes/main.tscn"
+boot_splash/image="res://resources/gif anjo/000.png"
+boot_splash/fullsize=false
 config/icon="res://icon.png"
 
 [display]
