@@ -8,11 +8,15 @@ const RUN_SPEED: float = 30.0
 
 var move_speed #: float = 1.0
 
+var dir = Directory.new()
+var path = OS.get_executable_path().get_base_dir().plus_file("screenshots")
+
 onready var look_pivot: Spatial = $lookPivot
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	dir.make_dir(path)
 
 func _input(event):
 	if event is InputEventMouseMotion:
@@ -23,6 +27,11 @@ func _input(event):
 		get_tree().quit()
 	if event.is_action_pressed("toggle_fullscreen"):
 		OS.window_fullscreen = !OS.window_fullscreen
+	if event.is_action_pressed("screenshot"):
+		var time = str(OS.get_unix_time())
+		var image = get_viewport().get_texture().get_data()
+		image.flip_y()
+		image.save_png("%s/%s.png" % [path, time])
 
 func _physics_process(_delta):
 	move_speed = WALK_SPEED

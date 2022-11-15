@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://resources/la criatura/0b1752b411b3778aa99b4684fcb8.jpg" type="Texture" id=1]
 [ext_resource path="res://scripts/player.gd" type="Script" id=2]
@@ -61,6 +61,9 @@ roughness = 0.58
 
 [sub_resource type="CubeMesh" id=11]
 
+[sub_resource type="CylinderMesh" id=12]
+radial_segments = 14
+
 [sub_resource type="CubeMesh" id=5]
 
 [sub_resource type="CubeMesh" id=8]
@@ -94,7 +97,7 @@ transform = Transform( 0.482353, 0, -0.875973, 0, 1, 0, 0.875977, 0, 0.482351, -
 rotation_mode = 1
 
 [node name="a01" type="Sprite3D" parent="SpawnPath/SpawnLoc"]
-transform = Transform( 2.557, -2.98023e-08, 2.98023e-08, 2.98023e-08, 2.70332, -3.72529e-09, 0, 4.47035e-08, 1.33029, 0, 0, 0 )
+transform = Transform( 2, -2.33104e-08, 1.60097e-16, 2.33104e-08, 2, -1.65365e-08, 6.52774e-17, 3.3073e-08, 1, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 17 )
 
@@ -104,7 +107,7 @@ offset = 216.71
 rotation_mode = 1
 
 [node name="a02" type="Sprite3D" parent="SpawnPath/SpawnLoc2"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 1.68406, 7.91189e-09, 0.136608, -9.90693e-09, 1.7, 8.19073e-09, -0.232234, -1.51471e-08, 0.990625, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 27 )
 
@@ -114,7 +117,7 @@ offset = 404.64
 rotation_mode = 1
 
 [node name="a03" type="Sprite3D" parent="SpawnPath/SpawnLoc3"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 0.990625, 4.65405e-09, 0.136608, -5.82761e-09, 1, 8.19073e-09, -0.136608, -8.91004e-09, 0.990625, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 24 )
 
@@ -124,7 +127,7 @@ offset = 681.1
 rotation_mode = 1
 
 [node name="a04" type="Sprite3D" parent="SpawnPath/SpawnLoc4"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 1.98125, 9.3081e-09, 0.136608, -1.16552e-08, 2, 8.19073e-09, -0.273217, -1.78201e-08, 0.990625, 0, 0, 0 )
 flip_h = true
 billboard = 1
 texture = ExtResource( 22 )
@@ -135,7 +138,7 @@ offset = 743.02
 rotation_mode = 1
 
 [node name="a05" type="Sprite3D" parent="SpawnPath/SpawnLoc5"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 0.990625, 4.65405e-09, 0.136608, -5.82761e-09, 1, 8.19073e-09, -0.136608, -8.91004e-09, 0.990625, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 23 )
 
@@ -145,7 +148,7 @@ offset = 1083.62
 rotation_mode = 1
 
 [node name="a06" type="Sprite3D" parent="SpawnPath/SpawnLoc6"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 1.98125, 9.3081e-09, 0.136608, -1.16552e-08, 2, 8.19073e-09, -0.273217, -1.78201e-08, 0.990625, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 26 )
 
@@ -155,7 +158,7 @@ offset = 1160.96
 rotation_mode = 1
 
 [node name="a07" type="Sprite3D" parent="SpawnPath/SpawnLoc7"]
-transform = Transform( 2.53303, 0, 0.94429, -1.49012e-08, 2.70332, 0, -0.349308, -2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 1.68406, 7.91189e-09, 0.136608, -9.90693e-09, 1.7, 8.19073e-09, -0.232234, -1.51471e-08, 0.990625, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 25 )
 
@@ -165,7 +168,7 @@ offset = 541.78
 rotation_mode = 1
 
 [node name="a08" type="Sprite3D" parent="SpawnPath/SpawnLoc8"]
-transform = Transform( 2.53303, 0, 0.94429, -7.45058e-08, 2.70332, 0, -0.349308, 2.23517e-08, 0.937008, 0, 0, 0 )
+transform = Transform( 1.98125, 5.99674e-08, 0.136608, -5.82759e-08, 2, -8.19073e-09, -0.273217, 8.2669e-09, 0.990625, 0, 0, 0 )
 billboard = 1
 texture = ExtResource( 21 )
 
@@ -184,7 +187,7 @@ script = ExtResource( 2 )
 [node name="telas" type="Node" parent="."]
 
 [node name="anjo2" type="Sprite3D" parent="telas"]
-transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -238.563, 7.98256, 24.1433 )
+transform = Transform( -2.18557e-07, 0, 1, 0, 5, 0, -5, 0, -4.37114e-08, -228.392, 7.98256, 24.1433 )
 billboard = 1
 shaded = true
 texture = ExtResource( 6 )
@@ -365,7 +368,14 @@ material/0 = SubResource( 2 )
 
 [node name="bloco torre" type="MeshInstance" parent="."]
 transform = Transform( 31, 0, 0, 0, 30.1962, -7.01354, 0, 7.01354, 30.1962, -172, 23.266, 10.3831 )
+visible = false
 mesh = SubResource( 11 )
+material/0 = ExtResource( 28 )
+
+[node name="cilindro2" type="MeshInstance" parent="."]
+transform = Transform( 45.6082, 0, 0, 0, 180.071, -45.0498, 0, 30.5213, 42.5804, -177.942, -107.79, -12.748 )
+mesh = SubResource( 12 )
+skeleton = NodePath("../torre")
 material/0 = ExtResource( 28 )
 
 [node name="torre" type="Spatial" parent="."]
@@ -764,6 +774,12 @@ transform = Transform( 0.333333, 0, 0, 0, 0.333333, 2.98023e-08, 0, -2.98023e-08
 light_color = Color( 1, 0.627451, 0.803922, 1 )
 light_energy = 4.285
 omni_range = 23.238
+
+[node name="cilindro" type="MeshInstance" parent="torre"]
+transform = Transform( 4.692, 0, 0, 0, 19.3266, -2.91986, 0, -2.91986, 6.67664, -8.66666, -11.9254, 12.517 )
+visible = false
+mesh = SubResource( 12 )
+material/0 = ExtResource( 28 )
 
 [node name="meat" parent="." instance=ExtResource( 39 )]
 transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 69.067, 0, 26 )
