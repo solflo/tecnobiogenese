@@ -25,8 +25,11 @@ func _ready():
 	# pick an initial "neutral" environment at random
 	# doesn't scale though. not conveniently anyways
 	randomize()
+	envs.shuffle()
 	if randf() > 0.5:
-		i = 1
+		i = envs.find(red)
+	else:
+		i = envs.find(black)
 	toggle_sky()
 
 func _input(event):
